@@ -1,0 +1,42 @@
+body {
+	display: grid;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+
+
+
+
+a {
+display: inline;
+}
+h1{
+	color: var(--text-color);
+	justify-self: center;
+}
+
+.Editor {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100%;
+}
+.ShadersGrid{
+	background-color: red;
+	display: grid;
+}
+
+
+ul{
+	list-style-type: none
+}
+h1 {
+	margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

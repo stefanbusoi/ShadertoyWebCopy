@@ -1,0 +1,36 @@
+h1.title{
+	justify-self: center;
+    font-family: sans-serif;
+    color:var(--text-color)
+}
+p{
+	padding: 10px;
+    font-family: sans-serif;
+    color:var(--text-color)
+}
+ul{
+	list-style-type: none
+
+}
+
+.ShaderFrame{
+	padding: 20px;
+	.XUnit{
+		display:inline;
+		color:red;
+	}
+	.Yunit{
+		display:inline;
+		color:green;
+	}
+	p{
+		padding: 2px;
+		display: inline;
+	}
+	canvas{
+		width: calc(min(480px,90vw));
+		height: calc(min(270px,30vh));
+		display: block;
+	}
+	
+}

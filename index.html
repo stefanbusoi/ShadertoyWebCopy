@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <title>Home Page</title>
+
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/index.css">
+  <script 
+    src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+
+</head>
+
+<body>
+ <header>
+    <a href="index.html">Home</a>
+    <a href="discover.html">What Are Shaders</a>
+    <a href="browse.html">Browse</a>
+    <div class="hamburgerMenu">
+      <input type="checkbox" id="btnControl"/>
+      <label class="btn" for="btnControl">
+        <!--https://www.svgrepo.com/svg/506800/burger-menu-->
+        <svg class="ButtonIcon" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24" fill="none">
+         <path class="line" d="M4 18L20 18"   />
+         <path class="line" d="M4 12L20 12" />
+         <path class="line" d="M4 6L20 6"   />
+        </svg> 
+      
+      <ul class="DropDown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">What Are Shaders</a></li>
+        <li><a href="browse.html">Browse</a></li>
+      </ul>
+    </label>
+    </div>
+  </header>
+  <h1 class="title">Home</h1>
+  <div class="content">
+    <div class="SOTW">
+      <p>Shader of the week</p>
+      <div class="card">
+        <!-- <a href=RenderPG.html> -->
+          <div class="top">
+            <h2>Neon Pattern</h2>
+          </div>
+          <div class="inner">
+            <canvas class="glslCanvas" data-fragment-url="shader3.frag"></canvas>
+            <div class="description">
+              <p>https://www.shadertoy.com/view/mtyGWy</p>
+            </div>
+          </div>
+       <!--  </a>-->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

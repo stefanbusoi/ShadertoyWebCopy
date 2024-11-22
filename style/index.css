@@ -1,0 +1,78 @@
+* {
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+h1.title {
+  color: var(--text-color);
+  justify-self: center;
+  font-family: sans-serif;
+}
+
+.glslCanvas {
+  width: 100%;
+  height: 40%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.SOTW {
+  display: block;
+  width: calc(50% - 10px - 20px);
+  margin: 20px;
+}
+.SOTW p {
+  font-size: large;
+  font-family: sans-serif;
+  color: var(--text-color);
+  display: inline-block;
+}
+.SOTW .card {
+  width: calc(100% - 10px - 20px);
+  border: 3px solid var(--primary-color);
+  margin-bottom: 1em;
+}
+.SOTW .card h2 {
+  color: var(--text-color);
+  background: var(--primary-color);
+  margin: 0;
+  padding: 0.5em 1em;
+}
+.SOTW .card .inner .description {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--text-color);
+}
+.SOTW .card a {
+  color: inherit;
+  text-decoration: inherit;
+}
+@media (max-width: 700px) {
+  .SOTW {
+    width: calc(100% - 10px - 20px);
+  }
+}
+
+.card:hover {
+  border-color: #777;
+}
+
+@keyframes zoom {
+  20% {
+    transform: scale(1.05);
+  }
+}/*# sourceMappingURL=index.css.map */

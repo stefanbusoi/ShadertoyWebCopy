@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <title>Home Page</title>
+
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/browse.css">
+  <script  src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="discover.html">What Are Shaders</a>
+    <a href="browse.html">Browse</a>
+    <div class="hamburgerMenu">
+      <input type="checkbox" id="btnControl"/>
+      <label class="btn" for="btnControl">
+        <!--https://www.svgrepo.com/svg/506800/burger-menu-->
+        <svg class="ButtonIcon" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24" fill="none">
+         <path class="line" d="M4 18L20 18"   />
+         <path class="line" d="M4 12L20 12" />
+         <path class="line" d="M4 6L20 6"   />
+        </svg> 
+      
+      <ul class="DropDown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">What Are Shaders</a></li>
+        <li><a href="browse.html">Browse</a></li>
+      </ul>
+    </label>
+    </div>
+  </header>
+  
+  <h1 class="title">Browse</h1>
+  <ul class="cards">
+    <li class="card">
+         <!--  <a href=RenderPG.html>-->
+      <div class="top">
+        <h2>Circles</h2>
+      </div>
+        <div class="inner">
+          <canvas class="glslCanvas" data-fragment-url="shader.frag"></canvas>
+          <div class="description">
+            <p>Scaling circles</p>
+          </div>
+        </div>
+      <!--  </a>-->
+    </li>
+    <li class="card">
+           <!--  <a href=RenderPG.html>-->
+        <div class="top">
+          <h2>Visual Position Representation</h2>
+        </div>
+          <div class="inner">
+            <canvas class="glslCanvas" data-fragment-url="shader2.frag"></canvas>
+            <div class="description">
+              <p>Visual Position Representation(gl_FragCoord) 0-1 range</p>
+          </div>
+        </div>
+        <!--  </a>-->
+      </li>
+      <li class="card">
+          <!--  <a href=RenderPG.html>-->
+        <div class="top">
+          <h2>Neon Pattern</h2>
+        </div>
+          <div class="inner">
+            <canvas class="glslCanvas" data-fragment-url="shader3.frag"></canvas>
+            <div class="description">
+              <p>https://www.shadertoy.com/view/mtyGWy</p>
+          </div>
+        </div>
+      <!--  </a>-->
+      </li>
+      <li class="card">
+       <!--  <a href=RenderPG.html>-->
+        <div class="top">
+          <h2>Torus Hive</h2>
+        </div>
+          <div class="inner">
+            <canvas class="glslCanvas" data-fragment-url="shader4.frag"></canvas>
+            <div class="description">
+              <p>https://www.shadertoy.com/view/NsdXzf</p>
+          </div>
+        </div>
+       <!--  </a>-->
+      </li>  
+  </ul>
+</body>
+
+</html>

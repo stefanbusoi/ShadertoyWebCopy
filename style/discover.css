@@ -1,0 +1,36 @@
+h1.title {
+  justify-self: center;
+  font-family: sans-serif;
+  color: var(--text-color);
+}
+
+p {
+  padding: 10px;
+  font-family: sans-serif;
+  color: var(--text-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.ShaderFrame {
+  padding: 20px;
+}
+.ShaderFrame .XUnit {
+  display: inline;
+  color: red;
+}
+.ShaderFrame .Yunit {
+  display: inline;
+  color: green;
+}
+.ShaderFrame p {
+  padding: 2px;
+  display: inline;
+}
+.ShaderFrame canvas {
+  width: min(480px, 90vw);
+  height: min(270px, 30vh);
+  display: block;
+}/*# sourceMappingURL=discover.css.map */
