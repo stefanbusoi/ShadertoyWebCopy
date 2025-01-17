@@ -16,8 +16,11 @@
   }
 }
 header {
+  height: 60px;
+  align-items: center;
   display: flex;
   justify-content: space-between;
+  justify-items: stretch;
   position: sticky;
   top: 0;
   color: var(--text-color);
@@ -33,7 +36,11 @@ header input {
   display: none;
 }
 header > a {
-  padding: 10px;
+  width: 25%;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
   color: inherit;
   text-decoration: inherit;
   font-family: sans-serif;
@@ -43,10 +50,12 @@ header a:hover {
 }
 header .hamburgerMenu {
   display: none;
+  background-color: var(--secondary-color);
 }
 header .hamburgerMenu .DropDown a {
   width: 300px;
   color: inherit;
+  font-size: 20px;
   text-decoration: inherit;
   font-family: sans-serif;
   display: inline-block;
@@ -69,7 +78,7 @@ header .hamburgerMenu .ButtonIcon {
   display: none;
 }
 
-#btnControl:checked + label .DropDown {
+#btnControl:hover + label .DropDown {
   display: block;
 }
 

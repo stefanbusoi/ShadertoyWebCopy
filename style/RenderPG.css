@@ -8,6 +8,16 @@ body {
   height: 100%;
 }
 
+#ErrorText {
+  color: red;
+}
+
+#CodeEditor {
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+}
+
 a {
   display: inline;
 }
@@ -17,10 +27,32 @@ h1 {
   justify-self: center;
 }
 
+.glslCanvas {
+  width: 80%;
+  height: 94%;
+  justify-self: center;
+  align-self: center;
+}
+
+#CodeTextArea {
+  width: calc(100% - 10px - 20px);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
 .Editor {
+  margin: 50px;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
+}
+@media (max-width: 900px) {
+  .Editor {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height: 200%;
+  }
 }
 
 .ShadersGrid {

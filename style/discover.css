@@ -5,7 +5,6 @@ h1.title {
 }
 
 p {
-  padding: 10px;
   font-family: sans-serif;
   color: var(--text-color);
 }
@@ -14,16 +13,25 @@ ul {
   list-style-type: none;
 }
 
+.content {
+  padding: 20px;
+  color: var(--text-color);
+}
+
 .ShaderFrame {
   padding: 20px;
 }
-.ShaderFrame .XUnit {
+.ShaderFrame .red {
   display: inline;
   color: red;
 }
-.ShaderFrame .Yunit {
+.ShaderFrame .green {
   display: inline;
   color: green;
+}
+.ShaderFrame .blue {
+  display: inline;
+  color: blue;
 }
 .ShaderFrame p {
   padding: 2px;

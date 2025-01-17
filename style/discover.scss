@@ -4,7 +4,7 @@ h1.title{
     color:var(--text-color)
 }
 p{
-	padding: 10px;
+
     font-family: sans-serif;
     color:var(--text-color)
 }
@@ -12,16 +12,23 @@ ul{
 	list-style-type: none
 
 }
-
+.content{
+	padding:20px;
+	color:var(--text-color)
+}
 .ShaderFrame{
 	padding: 20px;
-	.XUnit{
+	.red{
 		display:inline;
 		color:red;
 	}
-	.Yunit{
+	.green{
 		display:inline;
 		color:green;
+	}
+	.blue{
+		display:inline;
+		color:blue
 	}
 	p{
 		padding: 2px;

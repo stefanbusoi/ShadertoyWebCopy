@@ -7,15 +7,16 @@
   <link rel="stylesheet" href="style/base.css">
   <link rel="stylesheet" href="style/index.css">
   <script 
-    src="https://rawgit.com/patriciogonzalezvivo/glslCanvas/master/dist/GlslCanvas.js"></script>
+    src="JS/GLSSCanvas.js"></script>
 
 </head>
 
 <body>
- <header>
+  <header>
     <a href="index.html">Home</a>
     <a href="discover.html">What Are Shaders</a>
     <a href="browse.html">Browse</a>
+    <a href="RenderPG.html?MyAccount=1">Your Code</a>
     <div class="hamburgerMenu">
       <input type="checkbox" id="btnControl"/>
       <label class="btn" for="btnControl">
@@ -30,12 +31,15 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">What Are Shaders</a></li>
         <li><a href="browse.html">Browse</a></li>
+        <li> <a href="RenderPG.html?MyAccount=1">Your Code</a></li>
       </ul>
     </label>
     </div>
   </header>
   <h1 class="title">Home</h1>
   <div class="content">
+    <h1 class="BigText">Build and Share your best shaders</h1>
+
     <div class="SOTW">
       <p>Shader of the week</p>
       <div class="card">
@@ -44,7 +48,7 @@
             <h2>Neon Pattern</h2>
           </div>
           <div class="inner">
-            <canvas class="glslCanvas" data-fragment-url="shader3.frag"></canvas>
+            <canvas  class="glslCanvas" data-fragment-url="shader3.frag"></canvas>
             <div class="description">
               <p>https://www.shadertoy.com/view/mtyGWy</p>
             </div>

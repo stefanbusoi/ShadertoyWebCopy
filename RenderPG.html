@@ -1,41 +1,51 @@
 <!--THIS PAGE IS UNUSED-->
 <!doctype html>
-<html lang="en-US">
+<html lang="en-US"> 
   <head>  
     <title>Home Page</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/RenderPG.css">
+    <script type="text/javascript" src="JS/GLSSCanvas copy.js"></script>
+
     <style>
-      html, body {
-        width:  100%;
-        height: 100%;
-        margin: 0;
-      }
-      canvas {
-          display: block;
-          width: 100%;
-          height: 100%;
-      }
+    
   </style>
 </head>
   <body>
     <header>
       <a href="index.html">Home</a>
-      <a href="discover.html">Discover</a>
-      <a href="">block2</a>
-
-      
-    </header>
-    <h1>PAGE UNDER CONSTRUCTION</h1>
-    <div class="Editor">
-      <div style="max-width:fit-content;" class="CodeEditor">
-        <textarea  rows="40"  cols="100" autocomplete="off" id="tryit-textarea-3" class="tryit-code" wrap="logical" spellcheck="false">&lt;!DOCTYPE html&gt;
+      <a href="discover.html">What Are Shaders</a>
+      <a href="browse.html">Browse</a>
+      <a href="RenderPG.html?MyAccount=1">Your Code</a>
+      <div class="hamburgerMenu">
+        <input type="checkbox" id="btnControl"/>
+        <label class="btn" for="btnControl">
+          <!--https://www.svgrepo.com/svg/506800/burger-menu-->
+          <svg class="ButtonIcon" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24" fill="none">
+           <path class="line" d="M4 18L20 18"   />
+           <path class="line" d="M4 12L20 12" />
+           <path class="line" d="M4 6L20 6"   />
+          </svg> 
         
+        <ul class="DropDown">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">What Are Shaders</a></li>
+          <li><a href="browse.html">Browse</a></li>
+          <li> <a href="RenderPG.html?MyAccount=1">Your Code</a></li>
+        </ul>
+      </label>
+      </div>
+    </header>
+      
+    <div class="Editor">
+      <div  id="CodeEditor">
+        <textarea class="textarea" id="CodeTextArea" autocomplete="off" id="tryit-textarea-3" class="tryit-code" wrap="logical" spellcheck="false">        
         </textarea>
-      </div>  
-      <iframe width="max(400px,30%)" height="min(400px,30%)"  src="Render.html" name="iframe_a" title="Iframe Example"></iframe>
-  
+      </div> 
+       
+      <canvas width="500" height="500" id="renderCanvas" class="glslCanvas"  ></canvas>
+
     </div>
   </body>
 </html> 

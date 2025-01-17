@@ -1,4 +1,4 @@
-.cards {
+#cards {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -6,43 +6,43 @@
   flex-wrap: wrap;
   margin-bottom: 1em;
 }
-.cards .card {
+#cards .card {
   width: calc(25% - 10px - 20px);
   border: 3px solid var(--primary-color);
   margin-bottom: 1em;
   margin: 5px;
 }
-.cards .card h2 {
+#cards .card h2 {
   color: var(--text-color);
   background: var(--primary-color);
   margin: 0;
   padding: 0.5em 1em;
 }
-.cards .card .inner .description {
+#cards .card .inner .description {
   padding-left: 10px;
   padding-right: 10px;
   color: var(--text-color);
 }
-.cards .card a {
+#cards .card a {
   color: inherit;
   text-decoration: inherit;
 }
 @media (max-width: 1250px) {
-  .cards .card {
+  #cards .card {
     width: calc(33.3333333333% - 10px - 20px);
   }
 }
 @media (max-width: 1000px) {
-  .cards .card {
+  #cards .card {
     width: calc(50% - 10px - 20px);
   }
 }
 @media (max-width: 700px) {
-  .cards .card {
+  #cards .card {
     width: calc(100% - 10px - 20px);
   }
 }
-.cards .card:hover {
+#cards .card:hover {
   border-color: #777;
   animation-name: zoom;
   animation-duration: 2s;
