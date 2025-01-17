@@ -1,4 +1,5 @@
 Vreau sa precizez ca codul din fisierul GLSSCanvas.js nu este scris de mine iar in fisierul GLSSCanvas copy codul este scris de mine de la linia 1694 in jos
+Fata de prezentare tab ul Browse se incarca dintr un fisier json
 # Requirements and implementations:
 ## Cerinte HTML/CSS:
 - [X] Fisiere separate pentru HTML si CSS
